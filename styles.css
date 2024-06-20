@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  max-width: 1200px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.left {
+  flex: 3;
+  background-image: url("https://picsum.photos/800/600");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  padding: 20px;
+}
+
+.left .content {
+  text-align: center;
+}
+
+.left .content h1 {
+  margin: auto;
+  font-size: 2em;
+  font-weight: bold;
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.right {
+  flex: 7;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 40px;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.description {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.form {
+  width: 100%;
+}
+
+.form h1 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.form .form-group {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.form .form-group input {
+  width: 48%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form .full-width input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form .error {
+  color: red;
+  font-size: 0.9em;
+  display: none;
+}
+
+.form button {
+  width: 60%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #45a049;
+}
+
+.form .error-msg {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  font-size: 0.9em;
+  color: red;
+  height: 1em;
+}
+
+.form p {
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+.form p a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.form p a:hover {
+  text-decoration: underline;
+}
+
+.me-10 {
+  margin-right: 10px;
+}
